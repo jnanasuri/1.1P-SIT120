@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Penguins</title>
+    <style>
+        /* Internal CSS */
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+
+        /* External CSS */
+        .form-container {
+            width: 50%;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .submit-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Penguins</h1>
+    
+    <!-- Image -->
+    <img src="https://www.treehugger.com/thmb/WXzSc73m_GSF3VeyXoEx3kb-VMQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/eudyptes-chrysocome---rock-penguin-954769204-57f2ff2c96b141fba199ac326d7eb645.jpg" alt="penguin" style="width: 300px; height: 200px;">
+
+    <!-- Table -->
+    <table>
+        <tr>
+            <th>Species</th>
+            <th>Lifespan</th>
+        </tr>
+        <tr>
+            <td>Emperor penguins</td>
+            <td>Gentoo penguins</td>
+        </tr>
+        <tr>
+            <td>15-20 years</td>
+            <td>13 years</td>
+        </tr>
+    </table>
+
+    <!-- Form -->
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Submit" class="submit-button">
+        </form>
+    </div>
+</body>
+</html>
